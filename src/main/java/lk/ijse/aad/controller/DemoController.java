@@ -22,6 +22,11 @@ public class DemoController {
         return "DemoController run perfectly with :"+ id;
     }
 
+    @GetMapping(params ="test=all")
+    public String pparams(){
+        return "All ara tested";
+    }
+
     @GetMapping
     public String otherTest(){
         return "other test";
