@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @GetMapping(value = "/health/*")//?= ona charactor ekk dnn puluwn
+    @GetMapping(value = "/health/**")
     public String healthCheck(){
         return "DemoController run perfectly";
     }
